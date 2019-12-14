@@ -29,7 +29,7 @@ namespace MD8
             //await NavigationService.NavigateAsync("NavigationPage/PrismMasterDetailPage"); //NOOOO
             //await NavigationService.NavigateAsync("NavigationPage/PrismMasterDetailPage/ViewA/ViewB");
             await NavigationService.NavigateAsync("PrismMasterDetailPage/NavigationPage/ViewA");
-            await NavigationService.NavigateAsync("/PrismMasterDetailPage/NavigationPage/ViewA");
+            //await NavigationService.NavigateAsync("/PrismMasterDetailPage/NavigationPage/ViewA");
            
         }
 
