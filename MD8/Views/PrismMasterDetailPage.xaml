@@ -9,10 +9,11 @@
         <ContentPage Title="Menu">
             <StackLayout Padding="20">
                 <!-- TODO: // Update the Layout and add some real menu items  -->
-                <Button Text="MainPage" Command="{Binding NavigateCommand}" CommandParameter="NavigationPage/MainPage" />
-                <Button Text="ViewA" Command="{Binding NavigateCommand}" CommandParameter="NavigationPage/ViewA" />
-                <Button Text="ViewB" Command="{Binding NavigateCommand}" CommandParameter="/PrismMasterDetailPage/NavigationPage/ViewB" />
-                <Button Text="ViewC" Command="{Binding NavigateCommand}" CommandParameter="/PrismMasterDetailPage/NavigationPage/ViewC" />
+                <Button Text="Home" Command="{Binding NavigateCommand}" CommandParameter="/PrismMasterDetailPage/NavigationPage/ViewA" />
+                <Button Text="MainPage" Command="{Binding NavigateCommand}" CommandParameter="/NavigationPage/MainPage" />
+                <Button Text="ViewA" Command="{Binding NavigateCommand}" CommandParameter="../ViewA" />
+                <Button Text="ViewB" Command="{Binding NavigateCommand}" CommandParameter="./ViewB" />
+                <Button Text="ViewC" Command="{Binding NavigateCommand}" CommandParameter="ViewC" />
             </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>

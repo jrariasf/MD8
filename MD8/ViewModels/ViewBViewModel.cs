@@ -4,6 +4,7 @@ using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace MD8.ViewModels
 {
@@ -30,11 +31,13 @@ namespace MD8.ViewModels
         public void OnNavigatedFrom(INavigationParameters parameters)
         {
             Console.WriteLine("DEBUG - OnNavigatedFrom() in ViewB");
+            Console.WriteLine("DEBUG - Estamos en {0}", _navigationService.GetNavigationUriPath());
         }
 
         public void OnNavigatedTo(INavigationParameters parameters)
         {
             Console.WriteLine("DEBUG - OnNavigatedTo() in ViewB");
+            
             Console.WriteLine("DEBUG - Estamos en {0}", _navigationService.GetNavigationUriPath());
 
             if (parameters.ContainsKey("id"))

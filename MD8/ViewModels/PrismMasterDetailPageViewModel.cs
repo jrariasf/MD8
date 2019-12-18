@@ -19,7 +19,8 @@ namespace MD8.ViewModels
         {
             Console.WriteLine("PrismMasterDetailPageViewModel - ExecuteCommandName() Vamos a {0}", page);
             //_navigationService.NavigateAsync(new Uri(page));
-            //_navigationService.NavigateAsync(page, useModalNavigation: false);
+            //_navigationService.NavigateAsync(page, useModalNavigation: false);            
+            //_navigationService.NavigateAsync(new Uri(page, UriKind.Relative));
             _navigationService.NavigateAsync(page);
         }
 

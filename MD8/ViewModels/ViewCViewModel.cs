@@ -24,7 +24,8 @@ namespace MD8.ViewModels
         void ExecuteNavigateCommand()  // Equivale al Navigate() del vídeo de Brian Lagunas
         {
 
-            _navigationService.GoBackToRootAsync();
+            //_navigationService.GoBackToRootAsync();
+            _navigationService.NavigateAsync("/PrismMasterDetailPage/NavigationPage/ViewA");
         }
 
         public void OnNavigatedFrom(INavigationParameters parameters)

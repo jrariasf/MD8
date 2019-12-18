@@ -10,5 +10,7 @@
         <!-- <Entry Text="{Binding Value}" /> -->
         <Button Text="Navigate to View B" Command="{Binding NavigateCommand}" CommandParameter="ViewB" />
         <Button Text="Navigate to View C" Command="{Binding NavigateCommand}" CommandParameter="ViewC" />
+        <Entry Text="{Binding mitexto}" class="mitexto" BackgroundColor="red"></Entry>
+        <Button Text="pulsame" Command="{Binding NavigateCommand}" CommandParameter="{Binding mitexto}" />
     </StackLayout>
 </ContentPage>

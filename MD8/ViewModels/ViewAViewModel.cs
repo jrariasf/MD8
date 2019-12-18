@@ -17,6 +17,13 @@ namespace MD8.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
+        private string _mitexto = "inicializamos";
+        public string mitexto
+        {
+            get { return _mitexto; }
+            set { SetProperty(ref _mitexto, value); }
+        }
+
         private DelegateCommand<string> _navigateCommand;
         public DelegateCommand<string> NavigateCommand =>
             _navigateCommand ?? (_navigateCommand = new DelegateCommand<string>(ExecuteNavigateCommand));
